@@ -39,7 +39,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
-        description:'It uses data from the open weather map api and mapbox.',
+        description:'This site was created by Shreya Maheshwari.It uses data from the open weather map api and mapbox.',
         name: "Shreya Maheshwari"
     })
 })
