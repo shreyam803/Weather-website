@@ -14,6 +14,7 @@ const forecast = require('./utils/forecast');
 
 const app = express();
 
+const port = process.env.PORT || 3000;
 //defines path for express config
 
 const index = path.join(__dirname, '../public');
@@ -30,7 +31,7 @@ app.use(express.static(index));      //static takes the path to the folder
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather App',
+        title: 'Weather Website',
         name: "Shreya Maheshwari"
     });             //render generate html output
 });
@@ -38,13 +39,14 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About me',
+        description:'It uses data from the open weather map api and mapbox.',
         name: "Shreya Maheshwari"
     })
 })
 app.get('/help', (req, res) => {
     res.render('help', {
         question:'How to  use it?',
-        description: 'Enter your country name in the search bar to get the forecast of your location and you will get your weather forecast.',
+        description: 'Enter your address in the search bar to get the forecast of your location and you will get your weather forecast.',
         name: "Shreya Maheshwari",
         title: "Help"
     })
@@ -101,6 +103,6 @@ app.get('*', (req, res) => {                 // *=match anything that has not ma
     });
 });
 
-app.listen(3000, () => {
-    console.log('Server is running.');
+app.listen(port, () => {
+    console.log('Server is running.' + port);
 })
