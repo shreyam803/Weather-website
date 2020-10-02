@@ -1,0 +1,90 @@
+ 
+body {
+    color:rgb(153, 217, 222);
+    font-family: arial;
+    max-width: 650px;
+    margin: 15px auto;
+    padding: 0 16px;
+    background-image: url("../img/weather1.jpg");
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(138, 182, 182, 0.295);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* .background {
+    background-image: url("../img/weather.jpg"); 
+    background-repeat: no-repeat; 
+    width:100%;
+    background-size:cover;
+} */
+
+footer {
+    color:black;
+    border-top:1px solid #eeeeee;
+    margin-top:16px;
+    padding:16px 0;
+}
+
+header {
+    margin-top:16px;
+    margin-bottom:48px;
+
+}
+
+h1 {
+    font-size:64px;
+    margin-bottom:16px;
+}
+
+header a {
+    margin-top:10px;
+    color:white;
+    margin-right:16px;
+    text-decoration: none;
+    border:1px solid #333333;
+    background-color:#333333;
+    padding:5px
+
+}
+
+.about {
+    width:300px;
+
+}
+
+.main-content {
+    flex-grow:1;
+}
+
+input {
+    border: 1px solid #333333;
+    padding : 8px;
+    margin-right: 2px;
+    margin-top:20px;
+}
+
+button {
+    cursor:pointer;
+    border: 1px solid #333333;
+    background:#333333;
+    color:white;
+    padding: 8px;
+}
+
+.help {
+    color:white;
+}
+.title {
+    margin-bottom:30px;
+}
+
+#message-one {
+    color:white;
+}
+#message-two {
+    color:black;
+}
